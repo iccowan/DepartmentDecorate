@@ -1,1 +1,132 @@
-//css  file for Site A
+/* Import fonts from Google API */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+body {
+    font-family: 'IBM Plex Serif', serif;
+    background: lightgray;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode:soft-light;
+}
+
+.container {
+    margin-left: 50vh;
+    margin-right: 50vh;
+}
+
+.centered {
+    text-align: center;
+}
+
+#StudioArt {
+    background-image: url(../pics/Centrecollegeseal.png);
+}
+
+#Economics {
+    background-image: url(../pics/https___specials-images.forbesimg.com_imageserve_557f3618e4b017853ecec064_0x0.jpg_fit=scale&background=000000);
+}
+
+#Politics {
+    background-image: url(../pics/image_handler.png);
+}
+
+#ComputerScience {
+    background-image: url(../pics/J8El1pjg_400x400.jpg);
+}
+
+#Mathematics {
+    background-image: url(../pics/site.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+
+a.button {
+    background-color: lightcyan;
+    padding: 10px;
+    outline-color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+a.button:hover {
+    background-color: lightblue;
+}
+
+
+@keyframes slideIn {
+    0% {
+    transform: translateX(-100px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+table {
+    border: 5px solid black;
+    border-radius: 4px;
+    padding: 2vw;
+    
+    position: relative;
+    opacity: 0;
+
+    animation: slideIn 1s forwards;
+
+    animation-delay: .25s;
+}
+
+table img {
+    width: 100px;
+}
+
+td {
+    position: relative;
+    opacity: 0;
+    border: 4px dotted grey;
+    padding: .5vw;
+
+    animation: slideIn 1s forwards;
+
+    animation-delay: 1s;
+}
+
+th {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+li {
+    border-bottom: 2px dotted black;
+    padding: 10px 0px 10px 0px;
+    
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+li a:hover {
+    font-size: 30px;
+    color: blue;
+}
